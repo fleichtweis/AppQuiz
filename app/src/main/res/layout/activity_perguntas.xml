@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerguntasActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/text_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Olá, usuário" />
+
+        <TextView
+            android:id="@+id/text_numero_pergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/secundaria"
+            android:padding="16dp"
+            android:text="Pergunta 1 de 4"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/text_pergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cinza_claro"
+            android:padding="16dp"
+            android:text="Pergunta 1"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_respostas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radio_resposta1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resposta 01" />
+
+            <RadioButton
+                android:id="@+id/radio_resposta2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resposta 02" />
+
+            <RadioButton
+                android:id="@+id/radio_resposta3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resposta 03" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_confirmar_resposta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar Resposta" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
